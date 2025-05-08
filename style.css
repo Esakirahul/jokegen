@@ -261,3 +261,106 @@ h1{
         color: white;
     } 
 }
+/* Your existing CSS code here */
+
+/* Responsive design for various screen sizes */
+
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    #button {
+        width: 140px;
+        font-size: 28px;
+    }
+
+    #jokeContent, #joke {
+        font-size: 24px;
+    }
+
+    #footer {
+        font-size: 18px;
+    }
+
+    #minion {
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #button {
+        width: 150px;
+        font-size: 32px;
+    }
+
+    #jokeContent, #joke {
+        font-size: 28px;
+    }
+
+    #footer {
+        font-size: 20px;
+    }
+
+    #minion {
+        width: 60%;
+        max-width: 250px;
+    }
+}
+
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px) and (max-width: 1823px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    #button {
+        width: 167px;
+        font-size: 36px;
+    }
+
+    #jokeContent, #joke {
+        font-size: 32px;
+    }
+
+    #footer {
+        font-size: 24px;
+    }
+
+    #minion {
+        width: 50%;
+        max-width: 300px;
+    }
+}
+
+/* Large screens (Smart TVs and bigger screens) ---------- */
+@media screen and (min-width: 1824px) {
+    h1 {
+        font-size: 56px;
+    }
+
+    #button {
+        width: 200px;
+        font-size: 40px;
+    }
+
+    #jokeContent, #joke {
+        font-size: 36px;
+    }
+
+    #footer {
+        font-size: 28px;
+    }
+
+    #minion {
+        width: 40%;
+        max-width: 350px;
+    }
+}
