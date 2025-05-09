@@ -1,366 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-body{
+/* Base Styles (Mobile First) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background: linear-gradient(180deg, #00B4DB 0%, #325A79 100%);
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     color: white;
     font-family: 'Paytone One', sans-serif;
     overflow-x: hidden;
+    padding: 20px;
 }
 
-h1{
-    margin-top: 5%;
-    font-size: 48px;
+h1 {
+    margin: 5% 0 20px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-#button{
+#button {
     width: 167px;
     height: 60px;
     background: white;
-    color: black;
-    font-size: 36px;
-    line-height: 50px;
+    color: #325A79;
+    font-size: 1.5rem;
     text-align: center;
-}
-
-#button:hover{
-    box-shadow: 0px 3px 3px #325A79;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    font-family: 'Paytone One', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-#jokeContent,#joke{
-    font-family: Varela Round;
-    font-size: 32px;
-    line-height: 39px;
+#button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 }
 
-#jokeContent,#minion{
-    margin-top: 5%;
+#jokeContent, #joke {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    backdrop-filter: blur(5px);
 }
 
-#footer{
-    font-size: 24px;
-    line-height: 34px;
+#minion {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    border: 3px solid rgba(255,255,255,0.2);
+}
+
+#footer {
+    font-size: 1.2rem;
     text-decoration: none;
     color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
-/* Smartphones (portrait) ---------- */
-@media screen and (max-width: 320px){
-    body{
-        background: linear-gradient(180deg, #00B4DB 0%, #325A79 100%);
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-family: 'Paytone One', sans-serif;
-        overflow-x: hidden;
-    }
-    
-    h1{
-        margin-top: 5%;
-        font-size: 48px;
-    }
-    
-    #button{
-        width: 167px;
-        height: 60px;
-        background: white;
-        color: black;
-        font-size: 36px;
-        line-height: 50px;
-        text-align: center;
-    }
-    
-    #button:hover{
-        box-shadow: 0px 3px 3px #325A79;
-        cursor: pointer;
-    }
-    
-    #jokeContent,#joke{
-        font-family: Varela Round;
-        font-size: 32px;
-        line-height: 39px;
-    }
-    
-    #jokeContent,#minion{
-        margin-top: 5%;
-    }
-    
-    #footer{
-        font-size: 24px;
-        line-height: 34px;
-        text-decoration: none;
-        color: white;
-    } 
+#footer:hover {
+    color: #00B4DB;
+    background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
 }
 
-/* Tablets, iPads (portrait and landscape) ---------- */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    body{
-        background: linear-gradient(180deg, #00B4DB 0%, #325A79 100%);
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-family: 'Paytone One', sans-serif;
-        overflow-x: hidden;
-    }
-    
-    h1{
-        margin-top: 5%;
-        font-size: 48px;
-    }
-    
-    #button{
-        width: 167px;
-        height: 60px;
-        background: white;
-        color: black;
-        font-size: 36px;
-        line-height: 50px;
-        text-align: center;
-    }
-    
-    #button:hover{
-        box-shadow: 0px 3px 3px #325A79;
-        cursor: pointer;
-    }
-    
-    #jokeContent,#joke{
-        font-family: Varela Round;
-        font-size: 32px;
-        line-height: 39px;
-    }
-    
-    #jokeContent,#minion{
-        margin-top: 5%;
-    }
-    
-    #footer{
-        font-size: 24px;
-        line-height: 34px;
-        text-decoration: none;
-        color: white;
-    } 
-}
-
-/* Desktops and laptops ---------- */
-@media screen and (min-width: 1224px){
-    body{
-        background: linear-gradient(180deg, #00B4DB 0%, #325A79 100%);
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-family: 'Paytone One', sans-serif;
-        overflow-x: hidden;
-    }
-    
-    h1{
-        margin-top: 5%;
-        font-size: 48px;
-    }
-    
-    #button{
-        width: 167px;
-        height: 60px;
-        background: white;
-        color: black;
-        font-size: 36px;
-        line-height: 50px;
-        text-align: center;
-    }
-    
-    #button:hover{
-        box-shadow: 0px 3px 3px #325A79;
-        cursor: pointer;
-    }
-    
-    #jokeContent,#joke{
-        font-family: Varela Round;
-        font-size: 32px;
-        line-height: 39px;
-    }
-    
-    #jokeContent,#minion{
-        margin-top: 5%;
-    }
-    
-    #footer{
-        font-size: 24px;
-        line-height: 34px;
-        text-decoration: none;
-        color: white;
-    } 
-}
-/* Large screens ---------- */
-@media screen and (min-width: 1824px){
-    body{
-        background: linear-gradient(180deg, #00B4DB 0%, #325A79 100%);
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        font-family: 'Paytone One', sans-serif;
-        overflow-x: hidden;
-    }
-    
-    h1{
-        margin-top: 5%;
-        font-size: 48px;
-    }
-    
-    #button{
-        width: 167px;
-        height: 60px;
-        background: white;
-        color: black;
-        font-size: 36px;
-        line-height: 50px;
-        text-align: center;
-    }
-    
-    #button:hover{
-        box-shadow: 0px 3px 3px #325A79;
-        cursor: pointer;
-    }
-    
-    #jokeContent,#joke{
-        font-family: Varela Round;
-        font-size: 32px;
-        line-height: 39px;
-    }
-    
-    #jokeContent,#minion{
-        margin-top: 5%;
-    }
-    
-    #footer{
-        font-size: 24px;
-        line-height: 34px;
-        text-decoration: none;
-        color: white;
-    } 
-}
-/* Your existing CSS code here */
-
-/* Responsive design for various screen sizes */
-
-/* Smartphones (portrait) ---------- */
-@media screen and (max-width: 320px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    #button {
+/* Responsive Breakpoints */
+@media (max-width: 320px) {
+    h1 { font-size: 1.5rem; }
+    #button { 
         width: 140px;
-        font-size: 28px;
+        height: 50px;
+        font-size: 1.2rem;
     }
-
-    #jokeContent, #joke {
-        font-size: 24px;
-    }
-
-    #footer {
-        font-size: 18px;
-    }
-
-    #minion {
-        width: 80%;
-        max-width: 200px;
-    }
+    #jokeContent, #joke { font-size: 1.1rem; }
+    #footer { font-size: 1rem; }
 }
 
-/* Tablets, iPads (portrait and landscape) ---------- */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    #button {
-        width: 150px;
-        font-size: 32px;
-    }
-
-    #jokeContent, #joke {
-        font-size: 28px;
-    }
-
-    #footer {
-        font-size: 20px;
-    }
-
-    #minion {
-        width: 60%;
-        max-width: 250px;
-    }
-}
-
-/* Desktops and laptops ---------- */
-@media screen and (min-width: 1224px) and (max-width: 1823px) {
-    h1 {
-        font-size: 48px;
-    }
-
-    #button {
-        width: 167px;
-        font-size: 36px;
-    }
-
-    #jokeContent, #joke {
-        font-size: 32px;
-    }
-
-    #footer {
-        font-size: 24px;
-    }
-
-    #minion {
-        width: 50%;
-        max-width: 300px;
-    }
-}
-
-/* Large screens (Smart TVs and bigger screens) ---------- */
-@media screen and (min-width: 1824px) {
-    h1 {
-        font-size: 56px;
-    }
-
-    #button {
+@media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    #button { 
         width: 200px;
-        font-size: 40px;
+        height: 70px;
+        font-size: 1.8rem;
     }
+    #jokeContent, #joke { font-size: 1.8rem; }
+    #minion { max-width: 70%; }
+    #footer { font-size: 1.4rem; }
+}
 
-    #jokeContent, #joke {
-        font-size: 36px;
+@media (min-width: 1024px) {
+    h1 { font-size: 3rem; }
+    #button { 
+        width: 220px;
+        height: 80px;
+        font-size: 2rem;
     }
+    #jokeContent, #joke { font-size: 2rem; }
+    #minion { max-width: 50%; }
+    #footer { font-size: 1.5rem; }
+}
 
-    #footer {
-        font-size: 28px;
+@media (min-width: 1824px) {
+    h1 { font-size: 3.5rem; }
+    #button { 
+        width: 250px;
+        height: 90px;
+        font-size: 2.2rem;
     }
-
-    #minion {
-        width: 40%;
-        max-width: 350px;
-    }
+    #jokeContent, #joke { font-size: 2.2rem; }
+    #minion { max-width: 40%; }
+    #footer { font-size: 1.8rem; }
 }
